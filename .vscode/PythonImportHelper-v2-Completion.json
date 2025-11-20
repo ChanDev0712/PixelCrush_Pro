@@ -1,0 +1,265 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageGrab",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "resource_path",
+        "kind": 2,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "def resource_path(relative_path):\n    \"\"\" Get absolute path to resource, works for dev and for PyInstaller \"\"\"\n    try:\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    return os.path.join(base_path, relative_path)\n# ---------- GLOBAL ----------\nimages_to_compress = []\ndef get_file_size_mb(path):",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_size_mb",
+        "kind": 2,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "def get_file_size_mb(path):\n    return os.path.getsize(path) / (1024 * 1024)\n# ---------- SCAN FOLDER ----------\ndef scan_folder():\n    global images_to_compress\n    folder = in_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status.config(text=\"Scanning folder...\", fg=\"#00ffff\")\n    root.update_idletasks()",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "scan_folder",
+        "kind": 2,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "def scan_folder():\n    global images_to_compress\n    folder = in_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status.config(text=\"Scanning folder...\", fg=\"#00ffff\")\n    root.update_idletasks()\n    exts = ('.jpg','.jpeg','.png','.bmp','.tiff','.tif','.webp','.gif','.avif','.heic','.heif')\n    total = big = small = 0\n    total_bytes = 0",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "crush_image",
+        "kind": 2,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "def crush_image(src, dst):\n    try:\n        with Image.open(src) as im:\n            if im.mode in (\"RGBA\", \"LA\", \"P\"):\n                bg = Image.new(\"RGB\", im.size, (255,255,255))\n                if im.mode == \"P\": im = im.convert(\"RGBA\")\n                bg.paste(im, mask=im.split()[-1] if \"A\" in im.mode else None)\n                im = bg\n            else:\n                im = im.convert(\"RGB\")",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "start_crush",
+        "kind": 2,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "def start_crush():\n    if not images_to_compress:\n        messagebox.showinfo(\"PixelCrush Pro\", \"No files >2MB found!\")\n        return\n    out = out_var.get().strip()\n    if not out:\n        messagebox.showerror(\"Error\", \"Select Output Folder!\")\n        return\n    ts = datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n    log_file = os.path.join(out, f\"PixelCrush_Log_{ts}.txt\")",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "images_to_compress",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "images_to_compress = []\ndef get_file_size_mb(path):\n    return os.path.getsize(path) / (1024 * 1024)\n# ---------- SCAN FOLDER ----------\ndef scan_folder():\n    global images_to_compress\n    folder = in_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status.config(text=\"Scanning folder...\", fg=\"#00ffff\")",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"PixelCrush Pro v1.0\")\n# SET ICON (works in .py and .exe)\nicon_path = resource_path(\"icon.ico\")\nif os.path.exists(icon_path):\n    root.iconbitmap(icon_path)\nroot.geometry(\"1160x780\")\nroot.configure(bg=\"#0d1117\")\n# Style\nstyle = ttk.Style()",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "icon_path",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "icon_path = resource_path(\"icon.ico\")\nif os.path.exists(icon_path):\n    root.iconbitmap(icon_path)\nroot.geometry(\"1160x780\")\nroot.configure(bg=\"#0d1117\")\n# Style\nstyle = ttk.Style()\nstyle.theme_use('clam')\nstyle.configure(\"TProgressbar\", background=\"#1f6feb\", troughcolor=\"#161b22\", thickness=26)\n# Header",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "style",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "style = ttk.Style()\nstyle.theme_use('clam')\nstyle.configure(\"TProgressbar\", background=\"#1f6feb\", troughcolor=\"#161b22\", thickness=26)\n# Header\ntk.Label(root, text=\"PIXELCRUSH PRO\", font=(\"Arial\", 26, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\").pack(pady=(20,8))\ntk.Label(root, text=\"JPG Compression → Saved as .PNG (<2MB)\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\").pack()\n# Input & Output\nfor label, var, btn_text, cmd, color in [\n    (\"IN  :\", in_var := tk.StringVar(), \"Browse → Scan\", lambda: [in_var.set(filedialog.askdirectory() or \"\"), scan_folder()], \"#238636\"),\n    (\"OUT :\", out_var := tk.StringVar(), \"Browse\", lambda: out_var.set(filedialog.askdirectory() or \"\"), \"#1f6feb\")",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "sf",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "sf = tk.Frame(root, bg=\"#0d1117\")\nsf.pack(pady=15)\nstat_total = tk.Label(sf, text=\"Total: 0\", font=(\"Consolas\", 12), fg=\"#8b949e\", bg=\"#0d1117\"); stat_total.grid(row=0,column=0,padx=70)\nstat_big   = tk.Label(sf, text=\"Compress: 0\", font=(\"Consolas\", 12,\"bold\"), fg=\"#ffa657\", bg=\"#0d1117\"); stat_big.grid(row=0,column=1,padx=70)\nstat_small = tk.Label(sf, text=\"Skip: 0\", font=(\"Consolas\", 12), fg=\"#7ee787\", bg=\"#0d1117\"); stat_small.grid(row=0,column=2,padx=70)\nstat_size  = tk.Label(sf, text=\"Size: 0.00 GB\", font=(\"Consolas\", 12), fg=\"#58a6ff\", bg=\"#0d1117\"); stat_size.grid(row=0,column=3,padx=70)\nready_label = tk.Label(root, text=\"Ready to crush 0 files\", font=(\"Arial\", 13, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\")\nready_label.pack(pady=5)\n# Listbox\nlb = tk.Frame(root, bg=\"#161b22\", bd=2, relief=\"flat\")",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "stat_total",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "stat_total = tk.Label(sf, text=\"Total: 0\", font=(\"Consolas\", 12), fg=\"#8b949e\", bg=\"#0d1117\"); stat_total.grid(row=0,column=0,padx=70)\nstat_big   = tk.Label(sf, text=\"Compress: 0\", font=(\"Consolas\", 12,\"bold\"), fg=\"#ffa657\", bg=\"#0d1117\"); stat_big.grid(row=0,column=1,padx=70)\nstat_small = tk.Label(sf, text=\"Skip: 0\", font=(\"Consolas\", 12), fg=\"#7ee787\", bg=\"#0d1117\"); stat_small.grid(row=0,column=2,padx=70)\nstat_size  = tk.Label(sf, text=\"Size: 0.00 GB\", font=(\"Consolas\", 12), fg=\"#58a6ff\", bg=\"#0d1117\"); stat_size.grid(row=0,column=3,padx=70)\nready_label = tk.Label(root, text=\"Ready to crush 0 files\", font=(\"Arial\", 13, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\")\nready_label.pack(pady=5)\n# Listbox\nlb = tk.Frame(root, bg=\"#161b22\", bd=2, relief=\"flat\")\nlb.pack(fill=\"both\", expand=True, padx=60, pady=12)\nlistbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "stat_small",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "stat_small = tk.Label(sf, text=\"Skip: 0\", font=(\"Consolas\", 12), fg=\"#7ee787\", bg=\"#0d1117\"); stat_small.grid(row=0,column=2,padx=70)\nstat_size  = tk.Label(sf, text=\"Size: 0.00 GB\", font=(\"Consolas\", 12), fg=\"#58a6ff\", bg=\"#0d1117\"); stat_size.grid(row=0,column=3,padx=70)\nready_label = tk.Label(root, text=\"Ready to crush 0 files\", font=(\"Arial\", 13, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\")\nready_label.pack(pady=5)\n# Listbox\nlb = tk.Frame(root, bg=\"#161b22\", bd=2, relief=\"flat\")\nlb.pack(fill=\"both\", expand=True, padx=60, pady=12)\nlistbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")\nsb = tk.Scrollbar(lb, command=listbox.yview)\nlistbox.config(yscrollcommand=sb.set)",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "ready_label",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "ready_label = tk.Label(root, text=\"Ready to crush 0 files\", font=(\"Arial\", 13, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\")\nready_label.pack(pady=5)\n# Listbox\nlb = tk.Frame(root, bg=\"#161b22\", bd=2, relief=\"flat\")\nlb.pack(fill=\"both\", expand=True, padx=60, pady=12)\nlistbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")\nsb = tk.Scrollbar(lb, command=listbox.yview)\nlistbox.config(yscrollcommand=sb.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nsb.pack(side=\"right\", fill=\"y\")",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "lb",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "lb = tk.Frame(root, bg=\"#161b22\", bd=2, relief=\"flat\")\nlb.pack(fill=\"both\", expand=True, padx=60, pady=12)\nlistbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")\nsb = tk.Scrollbar(lb, command=listbox.yview)\nlistbox.config(yscrollcommand=sb.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nsb.pack(side=\"right\", fill=\"y\")\n# Progress & Status\nprog = tk.DoubleVar()\nttk.Progressbar(root, variable=prog, style=\"TProgressbar\").pack(fill=\"x\", padx=130, pady=20)",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "listbox",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "listbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")\nsb = tk.Scrollbar(lb, command=listbox.yview)\nlistbox.config(yscrollcommand=sb.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nsb.pack(side=\"right\", fill=\"y\")\n# Progress & Status\nprog = tk.DoubleVar()\nttk.Progressbar(root, variable=prog, style=\"TProgressbar\").pack(fill=\"x\", padx=130, pady=20)\nstatus = tk.Label(root, text=\"Select input folder\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\")\nstatus.pack(pady=5)",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "sb",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "sb = tk.Scrollbar(lb, command=listbox.yview)\nlistbox.config(yscrollcommand=sb.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nsb.pack(side=\"right\", fill=\"y\")\n# Progress & Status\nprog = tk.DoubleVar()\nttk.Progressbar(root, variable=prog, style=\"TProgressbar\").pack(fill=\"x\", padx=130, pady=20)\nstatus = tk.Label(root, text=\"Select input folder\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\")\nstatus.pack(pady=5)\n# Start Button",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "prog",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "prog = tk.DoubleVar()\nttk.Progressbar(root, variable=prog, style=\"TProgressbar\").pack(fill=\"x\", padx=130, pady=20)\nstatus = tk.Label(root, text=\"Select input folder\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\")\nstatus.pack(pady=5)\n# Start Button\nstart_btn = tk.Button(root, text=\"CRUSH ALL → .PNG\", command=start_crush,\n                      bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 13, \"bold\"), height=2, relief=\"flat\", state=\"disabled\")\nstart_btn.pack(pady=10)\nroot.mainloop()",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "status = tk.Label(root, text=\"Select input folder\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\")\nstatus.pack(pady=5)\n# Start Button\nstart_btn = tk.Button(root, text=\"CRUSH ALL → .PNG\", command=start_crush,\n                      bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 13, \"bold\"), height=2, relief=\"flat\", state=\"disabled\")\nstart_btn.pack(pady=10)\nroot.mainloop()",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "start_btn",
+        "kind": 5,
+        "importPath": "PixelCrush_Pro",
+        "description": "PixelCrush_Pro",
+        "peekOfCode": "start_btn = tk.Button(root, text=\"CRUSH ALL → .PNG\", command=start_crush,\n                      bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 13, \"bold\"), height=2, relief=\"flat\", state=\"disabled\")\nstart_btn.pack(pady=10)\nroot.mainloop()",
+        "detail": "PixelCrush_Pro",
+        "documentation": {}
+    }
+]
