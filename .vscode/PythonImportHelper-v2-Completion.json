@@ -9,15 +9,6 @@
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
         "label": "tkinter",
         "kind": 6,
         "isExtraImport": true,
@@ -51,6 +42,118 @@
         "documentation": {}
     },
     {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageGrab",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageGrab",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageGrab",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "Image",
         "importPath": "PIL",
         "description": "PIL",
@@ -75,6 +178,54 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
         "label": "Thread",
         "importPath": "threading",
         "description": "threading",
@@ -89,6 +240,411 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "customtkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "customtkinter",
+        "description": "customtkinter",
+        "detail": "customtkinter",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_size_mb",
+        "kind": 2,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "def get_file_size_mb(path):\n    return os.path.getsize(path) / (1024 * 1024)\n# ================= SCAN =================\ndef scan_folder():\n    global images_to_compress\n    folder = in_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status.config(text=\"Scanning...\", fg=\"#00ffff\")\n    root.update_idletasks()",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "scan_folder",
+        "kind": 2,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "def scan_folder():\n    global images_to_compress\n    folder = in_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status.config(text=\"Scanning...\", fg=\"#00ffff\")\n    root.update_idletasks()\n    exts = ('.jpg','.jpeg','.png','.bmp','.tiff','.tif','.webp','.gif','.avif')\n    total = big = small = 0\n    total_bytes = 0",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "crush_image",
+        "kind": 2,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "def crush_image(src, dst):\n    try:\n        with Image.open(src) as im:\n            if im.mode in (\"RGBA\", \"LA\", \"P\"):\n                bg = Image.new(\"RGB\", im.size, (255,255,255))\n                if im.mode == \"P\": im = im.convert(\"RGBA\")\n                bg.paste(im, mask=im.split()[-1] if \"A\" in im.mode else None)\n                im = bg\n            else:\n                im = im.convert(\"RGB\")",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "start_crush",
+        "kind": 2,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "def start_crush():\n    if not images_to_compress:\n        messagebox.showinfo(\"PixelCrush Pro\", \"No files >2MB found!\", parent=root)\n        return\n    out = out_var.get().strip()\n    if not out:\n        messagebox.showerror(\"Error\", \"Select Output Folder!\", parent=root)\n        return\n    ts = datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n    log_file = os.path.join(out, f\"PixelCrush_Log_{ts}.txt\")",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "images_to_compress",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "images_to_compress = []\ndef get_file_size_mb(path):\n    return os.path.getsize(path) / (1024 * 1024)\n# ================= SCAN =================\ndef scan_folder():\n    global images_to_compress\n    folder = in_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status.config(text=\"Scanning...\", fg=\"#00ffff\")",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"PixelCrush Pro ─ JPG → .PNG (<2MB)\")\nroot.geometry(\"1160x780\")\nroot.configure(bg=\"#0d1117\")\n# Safe & Beautiful Fonts\nroot.option_add(\"*Font\", \"Consolas 10\")\nroot.option_add(\"*Background\", \"#0d1117\")\nroot.option_add(\"*Foreground\", \"#c9d1d9\")\n# Style\nstyle = ttk.Style()",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "style",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "style = ttk.Style()\nstyle.theme_use('clam')\nstyle.configure(\"TProgressbar\", background=\"#1f6feb\", troughcolor=\"#161b22\", thickness=24)\n# Header\ntk.Label(root, text=\"PIXELCRUSH PRO\", font=(\"Arial\", 24, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\").pack(pady=(20,10))\ntk.Label(root, text=\"JPG Compression → Saved as .PNG (Max 2MB)\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\").pack()\n# Input\nf1 = tk.Frame(root, bg=\"#0d1117\")\nf1.pack(fill=\"x\", padx=60, pady=15)\ntk.Label(f1, text=\"IN  :\", font=(\"Arial\", 11, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\").pack(side=\"left\")",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "f1",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "f1 = tk.Frame(root, bg=\"#0d1117\")\nf1.pack(fill=\"x\", padx=60, pady=15)\ntk.Label(f1, text=\"IN  :\", font=(\"Arial\", 11, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\").pack(side=\"left\")\nin_var = tk.StringVar()\ntk.Entry(f1, textvariable=in_var, width=80, bg=\"#21262d\", fg=\"#c9d1d9\", insertbackground=\"#c9d1d9\", relief=\"flat\", bd=2).pack(side=\"left\", padx=10, fill=\"x\", expand=True)\ntk.Button(f1, text=\"Browse → Scan\", command=lambda: [in_var.set(filedialog.askdirectory() or \"\"), scan_folder()],\n          bg=\"#238636\", fg=\"white\", font=(\"Arial\", 10, \"bold\"), relief=\"flat\", width=16).pack(side=\"left\", padx=5)\n# Output\nf2 = tk.Frame(root, bg=\"#0d1117\")\nf2.pack(fill=\"x\", padx=60, pady=8)",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "in_var",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "in_var = tk.StringVar()\ntk.Entry(f1, textvariable=in_var, width=80, bg=\"#21262d\", fg=\"#c9d1d9\", insertbackground=\"#c9d1d9\", relief=\"flat\", bd=2).pack(side=\"left\", padx=10, fill=\"x\", expand=True)\ntk.Button(f1, text=\"Browse → Scan\", command=lambda: [in_var.set(filedialog.askdirectory() or \"\"), scan_folder()],\n          bg=\"#238636\", fg=\"white\", font=(\"Arial\", 10, \"bold\"), relief=\"flat\", width=16).pack(side=\"left\", padx=5)\n# Output\nf2 = tk.Frame(root, bg=\"#0d1117\")\nf2.pack(fill=\"x\", padx=60, pady=8)\ntk.Label(f2, text=\"OUT :\", font=(\"Arial\", 11, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\").pack(side=\"left\")\nout_var = tk.StringVar()\ntk.Entry(f2, textvariable=out_var, width=80, bg=\"#21262d\", fg=\"#c9d1d9\", insertbackground=\"#c9d1d9\", relief=\"flat\", bd=2).pack(side=\"left\", padx=10, fill=\"x\", expand=True)",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "f2",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "f2 = tk.Frame(root, bg=\"#0d1117\")\nf2.pack(fill=\"x\", padx=60, pady=8)\ntk.Label(f2, text=\"OUT :\", font=(\"Arial\", 11, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\").pack(side=\"left\")\nout_var = tk.StringVar()\ntk.Entry(f2, textvariable=out_var, width=80, bg=\"#21262d\", fg=\"#c9d1d9\", insertbackground=\"#c9d1d9\", relief=\"flat\", bd=2).pack(side=\"left\", padx=10, fill=\"x\", expand=True)\ntk.Button(f2, text=\"Browse\", command=lambda: out_var.set(filedialog.askdirectory() or \"\"),\n          bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 10, \"bold\"), relief=\"flat\", width=12).pack(side=\"left\", padx=5)\n# Stats\nsf = tk.Frame(root, bg=\"#0d1117\")\nsf.pack(pady=15)",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "out_var",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "out_var = tk.StringVar()\ntk.Entry(f2, textvariable=out_var, width=80, bg=\"#21262d\", fg=\"#c9d1d9\", insertbackground=\"#c9d1d9\", relief=\"flat\", bd=2).pack(side=\"left\", padx=10, fill=\"x\", expand=True)\ntk.Button(f2, text=\"Browse\", command=lambda: out_var.set(filedialog.askdirectory() or \"\"),\n          bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 10, \"bold\"), relief=\"flat\", width=12).pack(side=\"left\", padx=5)\n# Stats\nsf = tk.Frame(root, bg=\"#0d1117\")\nsf.pack(pady=15)\nstat_total = tk.Label(sf, text=\"Total: 0\", font=(\"Consolas\", 12), fg=\"#8b949e\", bg=\"#0d1117\"); stat_total.grid(row=0,column=0,padx=60)\nstat_big   = tk.Label(sf, text=\"Compress: 0\", font=(\"Consolas\", 12,\"bold\"), fg=\"#ffa657\", bg=\"#0d1117\"); stat_big.grid(row=0,column=1,padx=60)\nstat_small = tk.Label(sf, text=\"Skip: 0\", font=(\"Consolas\", 12), fg=\"#7ee787\", bg=\"#0d1117\"); stat_small.grid(row=0,column=2,padx=60)",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "sf",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "sf = tk.Frame(root, bg=\"#0d1117\")\nsf.pack(pady=15)\nstat_total = tk.Label(sf, text=\"Total: 0\", font=(\"Consolas\", 12), fg=\"#8b949e\", bg=\"#0d1117\"); stat_total.grid(row=0,column=0,padx=60)\nstat_big   = tk.Label(sf, text=\"Compress: 0\", font=(\"Consolas\", 12,\"bold\"), fg=\"#ffa657\", bg=\"#0d1117\"); stat_big.grid(row=0,column=1,padx=60)\nstat_small = tk.Label(sf, text=\"Skip: 0\", font=(\"Consolas\", 12), fg=\"#7ee787\", bg=\"#0d1117\"); stat_small.grid(row=0,column=2,padx=60)\nstat_size  = tk.Label(sf, text=\"Size: 0.00 GB\", font=(\"Consolas\", 12), fg=\"#58a6ff\", bg=\"#0d1117\"); stat_size.grid(row=0,column=3,padx=60)\nready_label = tk.Label(root, text=\"Ready to crush 0 files\", font=(\"Arial\", 13, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\")\nready_label.pack(pady=5)\n# Listbox\nlb = tk.Frame(root, bg=\"#161b22\", relief=\"flat\", bd=2)",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "stat_total",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "stat_total = tk.Label(sf, text=\"Total: 0\", font=(\"Consolas\", 12), fg=\"#8b949e\", bg=\"#0d1117\"); stat_total.grid(row=0,column=0,padx=60)\nstat_big   = tk.Label(sf, text=\"Compress: 0\", font=(\"Consolas\", 12,\"bold\"), fg=\"#ffa657\", bg=\"#0d1117\"); stat_big.grid(row=0,column=1,padx=60)\nstat_small = tk.Label(sf, text=\"Skip: 0\", font=(\"Consolas\", 12), fg=\"#7ee787\", bg=\"#0d1117\"); stat_small.grid(row=0,column=2,padx=60)\nstat_size  = tk.Label(sf, text=\"Size: 0.00 GB\", font=(\"Consolas\", 12), fg=\"#58a6ff\", bg=\"#0d1117\"); stat_size.grid(row=0,column=3,padx=60)\nready_label = tk.Label(root, text=\"Ready to crush 0 files\", font=(\"Arial\", 13, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\")\nready_label.pack(pady=5)\n# Listbox\nlb = tk.Frame(root, bg=\"#161b22\", relief=\"flat\", bd=2)\nlb.pack(fill=\"both\", expand=True, padx=60, pady=12)\nlistbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "stat_small",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "stat_small = tk.Label(sf, text=\"Skip: 0\", font=(\"Consolas\", 12), fg=\"#7ee787\", bg=\"#0d1117\"); stat_small.grid(row=0,column=2,padx=60)\nstat_size  = tk.Label(sf, text=\"Size: 0.00 GB\", font=(\"Consolas\", 12), fg=\"#58a6ff\", bg=\"#0d1117\"); stat_size.grid(row=0,column=3,padx=60)\nready_label = tk.Label(root, text=\"Ready to crush 0 files\", font=(\"Arial\", 13, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\")\nready_label.pack(pady=5)\n# Listbox\nlb = tk.Frame(root, bg=\"#161b22\", relief=\"flat\", bd=2)\nlb.pack(fill=\"both\", expand=True, padx=60, pady=12)\nlistbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")\nsb = tk.Scrollbar(lb, command=listbox.yview, bg=\"#30363d\")\nlistbox.config(yscrollcommand=sb.set)",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "ready_label",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "ready_label = tk.Label(root, text=\"Ready to crush 0 files\", font=(\"Arial\", 13, \"bold\"), fg=\"#58a6ff\", bg=\"#0d1117\")\nready_label.pack(pady=5)\n# Listbox\nlb = tk.Frame(root, bg=\"#161b22\", relief=\"flat\", bd=2)\nlb.pack(fill=\"both\", expand=True, padx=60, pady=12)\nlistbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")\nsb = tk.Scrollbar(lb, command=listbox.yview, bg=\"#30363d\")\nlistbox.config(yscrollcommand=sb.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nsb.pack(side=\"right\", fill=\"y\")",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "lb",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "lb = tk.Frame(root, bg=\"#161b22\", relief=\"flat\", bd=2)\nlb.pack(fill=\"both\", expand=True, padx=60, pady=12)\nlistbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")\nsb = tk.Scrollbar(lb, command=listbox.yview, bg=\"#30363d\")\nlistbox.config(yscrollcommand=sb.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nsb.pack(side=\"right\", fill=\"y\")\n# Progress\nprog = tk.DoubleVar()\nttk.Progressbar(root, variable=prog, maximum=100, style=\"TProgressbar\").pack(fill=\"x\", padx=120, pady=20)",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "listbox",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "listbox = tk.Listbox(lb, font=(\"Consolas\", 10), bg=\"#161b22\", fg=\"#c9d1d9\", selectbackground=\"#1f6feb\")\nsb = tk.Scrollbar(lb, command=listbox.yview, bg=\"#30363d\")\nlistbox.config(yscrollcommand=sb.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nsb.pack(side=\"right\", fill=\"y\")\n# Progress\nprog = tk.DoubleVar()\nttk.Progressbar(root, variable=prog, maximum=100, style=\"TProgressbar\").pack(fill=\"x\", padx=120, pady=20)\n# Status\nstatus = tk.Label(root, text=\"Select input folder\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\")",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "sb",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "sb = tk.Scrollbar(lb, command=listbox.yview, bg=\"#30363d\")\nlistbox.config(yscrollcommand=sb.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nsb.pack(side=\"right\", fill=\"y\")\n# Progress\nprog = tk.DoubleVar()\nttk.Progressbar(root, variable=prog, maximum=100, style=\"TProgressbar\").pack(fill=\"x\", padx=120, pady=20)\n# Status\nstatus = tk.Label(root, text=\"Select input folder\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\")\nstatus.pack(pady=5)",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "prog",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "prog = tk.DoubleVar()\nttk.Progressbar(root, variable=prog, maximum=100, style=\"TProgressbar\").pack(fill=\"x\", padx=120, pady=20)\n# Status\nstatus = tk.Label(root, text=\"Select input folder\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\")\nstatus.pack(pady=5)\n# START BUTTON\nstart_btn = tk.Button(root, text=\"CRUSH ALL →\", command=start_crush,\n                      bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 13, \"bold\"), height=2, relief=\"flat\", state=\"disabled\")\nstart_btn.pack(pady=10)\nroot.mainloop()",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "status = tk.Label(root, text=\"Select input folder\", font=(\"Arial\", 11), fg=\"#8b949e\", bg=\"#0d1117\")\nstatus.pack(pady=5)\n# START BUTTON\nstart_btn = tk.Button(root, text=\"CRUSH ALL →\", command=start_crush,\n                      bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 13, \"bold\"), height=2, relief=\"flat\", state=\"disabled\")\nstart_btn.pack(pady=10)\nroot.mainloop()",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "start_btn",
+        "kind": 5,
+        "importPath": "Final",
+        "description": "Final",
+        "peekOfCode": "start_btn = tk.Button(root, text=\"CRUSH ALL →\", command=start_crush,\n                      bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 13, \"bold\"), height=2, relief=\"flat\", state=\"disabled\")\nstart_btn.pack(pady=10)\nroot.mainloop()",
+        "detail": "Final",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_size_mb",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_file_size_mb(path):\n    return os.path.getsize(path) / (1024 * 1024)\n# ================= SCAN INPUT FOLDER =================\ndef scan_input_folder():\n    global images_to_compress\n    folder = input_folder_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status_label.config(text=\"Scanning folder - please wait...\", fg=\"orange\")\n    root.update_idletasks()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "scan_input_folder",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def scan_input_folder():\n    global images_to_compress\n    folder = input_folder_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status_label.config(text=\"Scanning folder - please wait...\", fg=\"orange\")\n    root.update_idletasks()\n    extensions = ('.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.tif', '.webp')\n    total_images = large = small = 0\n    total_size_bytes = 0",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "compress_image",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def compress_image(src_path, dst_path):\n    try:\n        with Image.open(src_path) as img:\n            # Handle transparency\n            if img.mode in (\"RGBA\", \"LA\", \"P\"):\n                bg = Image.new(\"RGB\", img.size, (255, 255, 255))\n                if img.mode == \"P\":\n                    img = img.convert(\"RGBA\")\n                bg.paste(img, mask=img.split()[-1] if img.mode in (\"RGBA\", \"LA\") else None)\n                img = bg",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "start_processing",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def start_processing():\n    if not images_to_compress:\n        messagebox.showinfo(\"Done\", \"No images need compression!\")\n        return\n    output_folder = output_folder_var.get().strip()\n    if not output_folder:\n        messagebox.showerror(\"Error\", \"Please select Output Folder!\")\n        return\n    timestamp = datetime.now().strftime(\"%Y%m%d_%H%M%S\")\n    log_txt_path = os.path.join(output_folder, f\"Compression_Log_{timestamp}.txt\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "images_to_compress",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "images_to_compress = []\ndef get_file_size_mb(path):\n    return os.path.getsize(path) / (1024 * 1024)\n# ================= SCAN INPUT FOLDER =================\ndef scan_input_folder():\n    global images_to_compress\n    folder = input_folder_var.get().strip()\n    if not folder or not os.path.isdir(folder):\n        return\n    status_label.config(text=\"Scanning folder - please wait...\", fg=\"orange\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Ultimate Image Compressor Pro\")\nroot.geometry(\"1000x740\")\nroot.configure(bg=\"#f4f4f4\")\n# Input Folder\ntk.Label(root, text=\"INPUT FOLDER\", font=(\"Arial\", 16, \"bold\"), bg=\"#f4f4f4\").pack(pady=(15,5))\ninput_folder_var = tk.StringVar()\ntk.Entry(root, textvariable=input_folder_var, width=110, font=10).pack(pady=5)\ntk.Button(root, text=\"Select Input Folder → Auto Scan\", command=lambda: [input_folder_var.set(filedialog.askdirectory() or \"\"), scan_input_folder()],\n          bg=\"#0066cc\", fg=\"white\", font=(\"Arial\", 12, \"bold\")).pack(pady=8)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "input_folder_var",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "input_folder_var = tk.StringVar()\ntk.Entry(root, textvariable=input_folder_var, width=110, font=10).pack(pady=5)\ntk.Button(root, text=\"Select Input Folder → Auto Scan\", command=lambda: [input_folder_var.set(filedialog.askdirectory() or \"\"), scan_input_folder()],\n          bg=\"#0066cc\", fg=\"white\", font=(\"Arial\", 12, \"bold\")).pack(pady=8)\n# Output Folder\ntk.Label(root, text=\"OUTPUT FOLDER\", font=(\"Arial\", 16, \"bold\"), bg=\"#f4f4f4\").pack(pady=(20,5))\noutput_folder_var = tk.StringVar()\ntk.Entry(root, textvariable=output_folder_var, width=110, font=10).pack(pady=5)\ntk.Button(root, text=\"Select Output Folder\", command=lambda: output_folder_var.set(filedialog.askdirectory() or \"\"),\n          font=(\"Arial\", 11)).pack(pady=8)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "output_folder_var",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "output_folder_var = tk.StringVar()\ntk.Entry(root, textvariable=output_folder_var, width=110, font=10).pack(pady=5)\ntk.Button(root, text=\"Select Output Folder\", command=lambda: output_folder_var.set(filedialog.askdirectory() or \"\"),\n          font=(\"Arial\", 11)).pack(pady=8)\n# Stats Row\nstats_frame = tk.Frame(root, bg=\"#f4f4f4\")\nstats_frame.pack(pady=10)\ninfo_total = tk.Label(stats_frame, text=\"Total Images: 0\", font=(\"Arial\", 12), bg=\"#f4f4f4\"); info_total.grid(row=0, column=0, padx=30)\ninfo_large = tk.Label(stats_frame, text=\"To Compress (>2MB): 0\", font=(\"Arial\", 12, \"bold\"), fg=\"red\", bg=\"#f4f4f4\"); info_large.grid(row=0, column=1, padx=30)\ninfo_small = tk.Label(stats_frame, text=\"Skip (≤2MB): 0\", font=(\"Arial\", 12), fg=\"green\", bg=\"#f4f4f4\"); info_small.grid(row=0, column=2, padx=30)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "stats_frame",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "stats_frame = tk.Frame(root, bg=\"#f4f4f4\")\nstats_frame.pack(pady=10)\ninfo_total = tk.Label(stats_frame, text=\"Total Images: 0\", font=(\"Arial\", 12), bg=\"#f4f4f4\"); info_total.grid(row=0, column=0, padx=30)\ninfo_large = tk.Label(stats_frame, text=\"To Compress (>2MB): 0\", font=(\"Arial\", 12, \"bold\"), fg=\"red\", bg=\"#f4f4f4\"); info_large.grid(row=0, column=1, padx=30)\ninfo_small = tk.Label(stats_frame, text=\"Skip (≤2MB): 0\", font=(\"Arial\", 12), fg=\"green\", bg=\"#f4f4f4\"); info_small.grid(row=0, column=2, padx=30)\ninfo_size = tk.Label(stats_frame, text=\"Total Size: 0.00 GB\", font=(\"Arial\", 12), bg=\"#f4f4f4\"); info_size.grid(row=0, column=3, padx=30)\ntotal_process_label = tk.Label(root, text=\"Files to process: 0\", font=(\"Arial\", 14, \"bold\"), fg=\"darkblue\", bg=\"#f4f4f4\")\ntotal_process_label.pack(pady=10)\n# Listbox\ntk.Label(root, text=\"All Images (size & action):\", font=(\"Arial\", 11), bg=\"#f4f4f4\").pack(anchor=\"w\", padx=30)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "info_total",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "info_total = tk.Label(stats_frame, text=\"Total Images: 0\", font=(\"Arial\", 12), bg=\"#f4f4f4\"); info_total.grid(row=0, column=0, padx=30)\ninfo_large = tk.Label(stats_frame, text=\"To Compress (>2MB): 0\", font=(\"Arial\", 12, \"bold\"), fg=\"red\", bg=\"#f4f4f4\"); info_large.grid(row=0, column=1, padx=30)\ninfo_small = tk.Label(stats_frame, text=\"Skip (≤2MB): 0\", font=(\"Arial\", 12), fg=\"green\", bg=\"#f4f4f4\"); info_small.grid(row=0, column=2, padx=30)\ninfo_size = tk.Label(stats_frame, text=\"Total Size: 0.00 GB\", font=(\"Arial\", 12), bg=\"#f4f4f4\"); info_size.grid(row=0, column=3, padx=30)\ntotal_process_label = tk.Label(root, text=\"Files to process: 0\", font=(\"Arial\", 14, \"bold\"), fg=\"darkblue\", bg=\"#f4f4f4\")\ntotal_process_label.pack(pady=10)\n# Listbox\ntk.Label(root, text=\"All Images (size & action):\", font=(\"Arial\", 11), bg=\"#f4f4f4\").pack(anchor=\"w\", padx=30)\nlist_frame = tk.Frame(root)\nlist_frame.pack(fill=\"both\", expand=True, padx=25, pady=5)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "info_large",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "info_large = tk.Label(stats_frame, text=\"To Compress (>2MB): 0\", font=(\"Arial\", 12, \"bold\"), fg=\"red\", bg=\"#f4f4f4\"); info_large.grid(row=0, column=1, padx=30)\ninfo_small = tk.Label(stats_frame, text=\"Skip (≤2MB): 0\", font=(\"Arial\", 12), fg=\"green\", bg=\"#f4f4f4\"); info_small.grid(row=0, column=2, padx=30)\ninfo_size = tk.Label(stats_frame, text=\"Total Size: 0.00 GB\", font=(\"Arial\", 12), bg=\"#f4f4f4\"); info_size.grid(row=0, column=3, padx=30)\ntotal_process_label = tk.Label(root, text=\"Files to process: 0\", font=(\"Arial\", 14, \"bold\"), fg=\"darkblue\", bg=\"#f4f4f4\")\ntotal_process_label.pack(pady=10)\n# Listbox\ntk.Label(root, text=\"All Images (size & action):\", font=(\"Arial\", 11), bg=\"#f4f4f4\").pack(anchor=\"w\", padx=30)\nlist_frame = tk.Frame(root)\nlist_frame.pack(fill=\"both\", expand=True, padx=25, pady=5)\nlistbox = tk.Listbox(list_frame, font=(\"Consolas\", 10))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "info_small",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "info_small = tk.Label(stats_frame, text=\"Skip (≤2MB): 0\", font=(\"Arial\", 12), fg=\"green\", bg=\"#f4f4f4\"); info_small.grid(row=0, column=2, padx=30)\ninfo_size = tk.Label(stats_frame, text=\"Total Size: 0.00 GB\", font=(\"Arial\", 12), bg=\"#f4f4f4\"); info_size.grid(row=0, column=3, padx=30)\ntotal_process_label = tk.Label(root, text=\"Files to process: 0\", font=(\"Arial\", 14, \"bold\"), fg=\"darkblue\", bg=\"#f4f4f4\")\ntotal_process_label.pack(pady=10)\n# Listbox\ntk.Label(root, text=\"All Images (size & action):\", font=(\"Arial\", 11), bg=\"#f4f4f4\").pack(anchor=\"w\", padx=30)\nlist_frame = tk.Frame(root)\nlist_frame.pack(fill=\"both\", expand=True, padx=25, pady=5)\nlistbox = tk.Listbox(list_frame, font=(\"Consolas\", 10))\nscrollbar = tk.Scrollbar(list_frame, command=listbox.yview)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "info_size",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "info_size = tk.Label(stats_frame, text=\"Total Size: 0.00 GB\", font=(\"Arial\", 12), bg=\"#f4f4f4\"); info_size.grid(row=0, column=3, padx=30)\ntotal_process_label = tk.Label(root, text=\"Files to process: 0\", font=(\"Arial\", 14, \"bold\"), fg=\"darkblue\", bg=\"#f4f4f4\")\ntotal_process_label.pack(pady=10)\n# Listbox\ntk.Label(root, text=\"All Images (size & action):\", font=(\"Arial\", 11), bg=\"#f4f4f4\").pack(anchor=\"w\", padx=30)\nlist_frame = tk.Frame(root)\nlist_frame.pack(fill=\"both\", expand=True, padx=25, pady=5)\nlistbox = tk.Listbox(list_frame, font=(\"Consolas\", 10))\nscrollbar = tk.Scrollbar(list_frame, command=listbox.yview)\nlistbox.config(yscrollcommand=scrollbar.set)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "total_process_label",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "total_process_label = tk.Label(root, text=\"Files to process: 0\", font=(\"Arial\", 14, \"bold\"), fg=\"darkblue\", bg=\"#f4f4f4\")\ntotal_process_label.pack(pady=10)\n# Listbox\ntk.Label(root, text=\"All Images (size & action):\", font=(\"Arial\", 11), bg=\"#f4f4f4\").pack(anchor=\"w\", padx=30)\nlist_frame = tk.Frame(root)\nlist_frame.pack(fill=\"both\", expand=True, padx=25, pady=5)\nlistbox = tk.Listbox(list_frame, font=(\"Consolas\", 10))\nscrollbar = tk.Scrollbar(list_frame, command=listbox.yview)\nlistbox.config(yscrollcommand=scrollbar.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "list_frame",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "list_frame = tk.Frame(root)\nlist_frame.pack(fill=\"both\", expand=True, padx=25, pady=5)\nlistbox = tk.Listbox(list_frame, font=(\"Consolas\", 10))\nscrollbar = tk.Scrollbar(list_frame, command=listbox.yview)\nlistbox.config(yscrollcommand=scrollbar.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nscrollbar.pack(side=\"right\", fill=\"y\")\n# Progress Bar\nprogress_var = tk.DoubleVar()\nprogress_bar = ttk.Progressbar(root, variable=progress_var, maximum=100)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "listbox",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "listbox = tk.Listbox(list_frame, font=(\"Consolas\", 10))\nscrollbar = tk.Scrollbar(list_frame, command=listbox.yview)\nlistbox.config(yscrollcommand=scrollbar.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nscrollbar.pack(side=\"right\", fill=\"y\")\n# Progress Bar\nprogress_var = tk.DoubleVar()\nprogress_bar = ttk.Progressbar(root, variable=progress_var, maximum=100)\nprogress_bar.pack(fill=\"x\", padx=50, pady=15)\n# Status",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "scrollbar",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "scrollbar = tk.Scrollbar(list_frame, command=listbox.yview)\nlistbox.config(yscrollcommand=scrollbar.set)\nlistbox.pack(side=\"left\", fill=\"both\", expand=True)\nscrollbar.pack(side=\"right\", fill=\"y\")\n# Progress Bar\nprogress_var = tk.DoubleVar()\nprogress_bar = ttk.Progressbar(root, variable=progress_var, maximum=100)\nprogress_bar.pack(fill=\"x\", padx=50, pady=15)\n# Status\nstatus_label = tk.Label(root, text=\"Select input folder to begin\", font=(\"Arial\", 12), fg=\"gray\", bg=\"#f4f4f4\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "progress_var",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "progress_var = tk.DoubleVar()\nprogress_bar = ttk.Progressbar(root, variable=progress_var, maximum=100)\nprogress_bar.pack(fill=\"x\", padx=50, pady=15)\n# Status\nstatus_label = tk.Label(root, text=\"Select input folder to begin\", font=(\"Arial\", 12), fg=\"gray\", bg=\"#f4f4f4\")\nstatus_label.pack(pady=5)\n# Start Button\nstart_button = tk.Button(root, text=\"START COMPRESSION\", command=start_processing,\n                         bg=\"#00aa00\", fg=\"white\", font=(\"Arial\", 18, \"bold\"), height=2, state=\"disabled\")\nstart_button.pack(pady=20)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "progress_bar",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "progress_bar = ttk.Progressbar(root, variable=progress_var, maximum=100)\nprogress_bar.pack(fill=\"x\", padx=50, pady=15)\n# Status\nstatus_label = tk.Label(root, text=\"Select input folder to begin\", font=(\"Arial\", 12), fg=\"gray\", bg=\"#f4f4f4\")\nstatus_label.pack(pady=5)\n# Start Button\nstart_button = tk.Button(root, text=\"START COMPRESSION\", command=start_processing,\n                         bg=\"#00aa00\", fg=\"white\", font=(\"Arial\", 18, \"bold\"), height=2, state=\"disabled\")\nstart_button.pack(pady=20)\nroot.mainloop()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "status_label",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "status_label = tk.Label(root, text=\"Select input folder to begin\", font=(\"Arial\", 12), fg=\"gray\", bg=\"#f4f4f4\")\nstatus_label.pack(pady=5)\n# Start Button\nstart_button = tk.Button(root, text=\"START COMPRESSION\", command=start_processing,\n                         bg=\"#00aa00\", fg=\"white\", font=(\"Arial\", 18, \"bold\"), height=2, state=\"disabled\")\nstart_button.pack(pady=20)\nroot.mainloop()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "start_button",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "start_button = tk.Button(root, text=\"START COMPRESSION\", command=start_processing,\n                         bg=\"#00aa00\", fg=\"white\", font=(\"Arial\", 18, \"bold\"), height=2, state=\"disabled\")\nstart_button.pack(pady=20)\nroot.mainloop()",
+        "detail": "main",
         "documentation": {}
     },
     {
@@ -260,6 +816,15 @@
         "description": "PixelCrush_Pro",
         "peekOfCode": "start_btn = tk.Button(root, text=\"CRUSH ALL → .PNG\", command=start_crush,\n                      bg=\"#1f6feb\", fg=\"white\", font=(\"Arial\", 13, \"bold\"), height=2, relief=\"flat\", state=\"disabled\")\nstart_btn.pack(pady=10)\nroot.mainloop()",
         "detail": "PixelCrush_Pro",
+        "documentation": {}
+    },
+    {
+        "label": "UltimateImageTool",
+        "kind": 6,
+        "importPath": "UltimateImageTool",
+        "description": "UltimateImageTool",
+        "peekOfCode": "class UltimateImageTool(ctk.CTk):\n    def __init__(self):\n        super().__init__()\n        self.title(\"Ultimate Image Tool Pro\")\n        self.geometry(\"1240x820\")\n        self.images_to_compress = []\n        # Tabview\n        self.tabview = ctk.CTkTabview(self, corner_radius=10)\n        self.tabview.pack(fill=\"both\", expand=True, padx=12, pady=12)\n        self.tabview.add(\"Compress >2MB → JPG\")",
+        "detail": "UltimateImageTool",
         "documentation": {}
     }
 ]
